@@ -1,0 +1,93 @@
+:root {
+    --accent: #6c5ce7;
+    --bg: transparent;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https"//fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.body1 {
+    font-family: 'poppins', sans-serif;
+    background-color: var(--bg);
+    bottom: -100%;
+    position: absolute;
+}
+
+.card-holder {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    margin-bottom: -100px;
+}
+
+.card {
+    width: 25rem;
+    background-color: var(--accent);
+    color: #fff;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.card__name {
+    font-size: 1.7em;
+}
+
+.card__img {
+    width: 100%;
+    height: 20rem;
+    object-fit: auto;
+    border-radius: 10px;
+}
+
+.card-contents {
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    color:#dadada;
+}
+
+p {
+    font-size: 0.8em;
+    margin-bottom: 1rem;
+}
+
+.card__read-more {
+    display: block;
+    opacity: 0;
+    height: 0;
+    transition: all 0.5s;
+}
+
+.card__read-more--open {
+    display: block;
+    opacity: 1;
+    height: 7rem;
+}
+
+.read-more-btn1 {
+    display: inline-block;
+    color: var(--accent);
+    background-color: #eee;
+    padding: 0.6rem 1.5rem;
+    font-size: 1em;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.read-more-btn1:hover{
+    background-color: #fff;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
